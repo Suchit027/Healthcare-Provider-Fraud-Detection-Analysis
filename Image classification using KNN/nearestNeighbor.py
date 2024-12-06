@@ -13,4 +13,4 @@ class NearestNeighbor:
     def predict(self, X):
         """X has entities with its attributes; row represents entities and columns represent the features."""
         rows = X.shape[0]
-        pred = np.zeros(rows)
+        pred = np.zeros(rows, dtype= self.ytr.dtype)
